@@ -40,8 +40,8 @@ portfolio-website/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/zeeshan-ahmad-dev/Portfolio
+   cd Portfolio
    ```
 
 2. **Install Dependencies**:
@@ -83,8 +83,8 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 For inquiries or suggestions, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
+- **Email**: za5743759@gmail.com
+- **LinkedIn**: [Zeeshan Ahmad](https://www.linkedin.com/in/zeeshan-ahmad-83a19a246/)
 
 ---
 
