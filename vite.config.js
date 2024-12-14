@@ -6,20 +6,24 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        assetFileNames: 'assets/[name][extname]', // Preserve original filenames and extensions
+        assetFileNames: 'assets/[name][extname]', // Preserve filenames and extensions
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
       },
     },
   },
   css: {
     preprocessorOptions: {
       css: {
-        additionalData: '@import "./src/assets/main.css";', // Ensure Tailwind is included
+        // Import your main CSS file here
+        additionalData: '@import "./src/assets/main.css";',
       },
     },
   },
   resolve: {
     alias: {
-      '@': '/src', // Optional: Allows you to use '@' as a shortcut for the src folder
+      '@': '/src', // Shortcut for source folder
     },
   },
+  base: './', // Important for relative paths in Netlify deployment
 });
