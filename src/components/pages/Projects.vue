@@ -34,7 +34,7 @@ const projects = [
     data: [
       {
         title: "Gemini",
-        img: "src/assets/gemini1.png",
+        img: "src/assets/ProjectImages/gemini1.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gemini",
@@ -42,7 +42,7 @@ const projects = [
       },
       {
         title: "Ecommerce Site",
-        img: "src/assets/makeupMastery.jpeg",
+        img: "src/assets/ProjectImages/makeupMastery.jpeg",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/MakeupMastery",
@@ -50,7 +50,7 @@ const projects = [
       },
       {
         title: "Movie-Insight",
-        img: "src/assets/movie-insight.png",
+        img: "src/assets/ProjectImages/movie-insight.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Movie-Insight",
@@ -63,7 +63,7 @@ const projects = [
     data: [
       {
         title: "Youtube Clone",
-        img: "src/assets/youtube.png",
+        img: "src/assets/ProjectImages/youtube.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/youtube-clone/",
@@ -71,7 +71,7 @@ const projects = [
       },
       {
         title: "TubeWizard",
-        img: "src/assets/TubeWizard.png",
+        img: "src/assets/ProjectImages/TubeWizard.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Tube-wizar/",
@@ -79,7 +79,7 @@ const projects = [
       },
       {
         title: "Pixel Art Editor",
-        img: "src/assets/PixelArt.png",
+        img: "src/assets/ProjectImages/PixelArt.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Pixel-Art-Editor",
@@ -92,7 +92,7 @@ const projects = [
     data: [
       {
         title: "Personal Dashboard",
-        img: "src/assets/dashboard.png",
+        img: "src/assets/ProjectImages/dashboard.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Personal-Dashboard",
@@ -100,7 +100,7 @@ const projects = [
       },
       {
         title: "Movie Mania",
-        img: "src/assets/movieMania.png",
+        img: "src/assets/ProjectImages/movieMania.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/movie-mania/",
@@ -113,7 +113,7 @@ const projects = [
     data: [
       {
         title: "LugX Gaming",
-        img: "src/assets/Lugx.png",
+        img: "src/assets/ProjectImages/Lugx.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gaming-site",
@@ -121,7 +121,7 @@ const projects = [
       },
       {
         title: "Netflix UI Clone",
-        img: "src/assets/Netflix.png",
+        img: "src/assets/ProjectImages/Netflix.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Netflix",
