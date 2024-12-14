@@ -6,7 +6,7 @@
     <img
       class="w-full transition-transform duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] group-hover:scale-90 group-hover:opacity-50"
       :src="data.img"
-      alt="Gemini Icon"
+      :alt="data.title"
     />
 
     <!-- Content -->

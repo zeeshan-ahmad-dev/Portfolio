@@ -26,6 +26,7 @@
               class="block hover:text-[#F9B703]"
               active-class="text-[#F9B703]"
             >
+            Skills
           </router-link>
         </li>
         <li>

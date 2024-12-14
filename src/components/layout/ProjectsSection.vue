@@ -77,14 +77,13 @@
   
       <!-- View More Button -->
       <div class="flex justify-center w-full">
-        <a
+        <router-link
           class="bg-[#f9b703] text-black font-semibold hover:shadow-lg transition-all border-none px-5 py-2 text-sm sm:text-base sm:px-6 sm:py-3 my-4 gap-2 rounded-full hover:bg-yellow-400"
-          href="@/assets/Zeeshan Ahmad (1).pdf.pdf"
-          download
-          aria-label="Download my portfolio as PDF"
+          to="/projects"
+          aria-label="View more Projects"
         >
           View More
-        </a>
+        </router-link>
       </div>
     </section>
   </template>

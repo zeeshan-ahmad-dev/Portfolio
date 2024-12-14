@@ -23,7 +23,7 @@
         <IconsList />
         <a
           class="bg-[#f9b703] hover:shadow-[0px_0px_10px_2px_rgba(249,183,3,0.8)] transition-all border-none px-4 py-2 my-3 gap-2 rounded-full flex items-center justify-center"
-          href="../../assets/Zeeshan Ahmad (1).pdf.pdf"
+          href="/assets/My CV(Zeeshan Ahmad).pdf"
           download
           ><i class="fa-solid fa-download animate-bounce"></i>Download CV</a
         >
@@ -33,7 +33,7 @@
     <div class="mt-16 lg:mt-2 rounded-full border-[#f9b703] group flex justify-center">
   <img
     class="w-[80%] max-w-[380px] md:max-w-[400px] lg:max-w-[480px] aspect-square rounded-full shadow-[0px_0px_10px_5px_rgba(249,183,3,0.8)] group-hover:shadow-[0px_0px_30px_10px_rgba(249,183,3,0.8)] transition-shadow duration-300 object-cover"
-    src="../../assets/Its me.jpg"
+    src="/assets/Its me.jpg"
     alt="Your Image"
   />
 </div>
