@@ -18,7 +18,7 @@
           class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
         >
           <img
-            src="@/assets/ProjectImages/gemini1.png"
+            src="@/assets/gemini1.png"
             alt="Gemini Project"
             class="w-full h-auto"
           />
@@ -33,7 +33,7 @@
           class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
         >
           <img
-            src="@/assets/ProjectImages/TubeWizard.png"
+            src="@/assets/TubeWizard.png"
             alt="Tube Wizard"
             class="w-full h-auto"
           />
@@ -48,7 +48,7 @@
           class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
         >
           <img
-            src="@/assets/ProjectImages/lugx.png"
+            src="@/assets/lugx.png"
             alt="Lugx Project"
             class="w-full h-auto"
           />
@@ -63,7 +63,7 @@
           class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
         >
           <img
-            src="@/assets/ProjectImages/dashboard.png"
+            src="@/assets/dashboard.png"
             alt="Dashboard Project"
             class="w-full h-auto"
           />
