@@ -23,13 +23,13 @@
 
 <script setup>
 const technologies = [
-  { name: "HTML5", icon: "/assets/icons/html.webp" },
-  { name: "CSS3", icon: "/assets/icons/css.webp" },
-  { name: "JavaScript", icon: "/assets/icons/js.webp" },
-  { name: "jQuery", icon: "/assets/icons/jquery.png" },
-  { name: "Tailwind CSS", icon: "/assets/icons/tailwind.png" },
-  { name: "Vue.js", icon: "/assets/icons/vue.png" },
-  { name: "git", icon: "/assets/icons/git.webp" },
-  { name: "github", icon: "/assets/icons/github.webp" },
+  { name: "HTML5", icon: "/assets/html.webp" },
+  { name: "CSS3", icon: "/assets/css.webp" },
+  { name: "JavaScript", icon: "/assets/js.webp" },
+  { name: "jQuery", icon: "/assets/jquery.png" },
+  { name: "Tailwind CSS", icon: "/assets/tailwind.png" },
+  { name: "Vue.js", icon: "/assets/vue.png" },
+  { name: "git", icon: "/assets/git.webp" },
+  { name: "github", icon: "/assets/github.webp" },
 ];
 </script>
