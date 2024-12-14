@@ -18,7 +18,7 @@
           class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
         >
           <img
-            src="/assets/ProjectImages/gemini1.png"
+            src="@/assets/ProjectImages/gemini1.png"
             alt="Gemini Project"
             class="w-full h-auto"
           />
@@ -79,7 +79,7 @@
       <div class="flex justify-center w-full">
         <a
           class="bg-[#f9b703] text-black font-semibold hover:shadow-lg transition-all border-none px-5 py-2 text-sm sm:text-base sm:px-6 sm:py-3 my-4 gap-2 rounded-full hover:bg-yellow-400"
-          href="/assets/ProjectImages/Zeeshan Ahmad (1).pdf.pdf"
+          href="/assets/Zeeshan Ahmad (1).pdf.pdf"
           download
           aria-label="Download my portfolio as PDF"
         >
