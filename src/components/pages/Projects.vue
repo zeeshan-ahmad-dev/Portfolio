@@ -36,7 +36,7 @@ const projects = [
         title: "Gemini",
         img: "/gemini1.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A web app built with Vue.js that demonstrates clean UI design and responsive layouts.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gemini",
         demoLink: "https://geminiz.netlify.app/",
       },
@@ -44,7 +44,7 @@ const projects = [
         title: "Ecommerce Site",
         img: "/makeupMastery.jpeg",
         description:
-          "This is a description of the card content. You can customize it.",
+          "An ecommerce platform focused on beauty products, showcasing user-friendly navigation and design.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/MakeupMastery",
         demoLink: "#",
       },
@@ -52,7 +52,7 @@ const projects = [
         title: "Movie-Insight",
         img: "/movie-insight.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A Vue.js app for browsing and discovering movie information with a stylish interface.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Movie-Insight",
         demoLink: "https://movie-insight-z.netlify.app/",
       },
@@ -65,7 +65,7 @@ const projects = [
         title: "Youtube Clone",
         img: "/youtube.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A clone of YouTube's frontend, replicating the platform's layout and design for practice.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/youtube-clone/",
         demoLink: "#",
       },
@@ -73,7 +73,7 @@ const projects = [
         title: "TubeWizard",
         img: "/TubeWizard.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "An interactive video management tool built with HTML, CSS, and JavaScript.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Tube-wizar/",
         demoLink: "https://zeeshan-ahmad-dev.github.io/Tube-wizar/",
       },
@@ -81,7 +81,7 @@ const projects = [
         title: "Pixel Art Editor",
         img: "/PixelArt.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A fun and intuitive pixel art editor with grid-based drawing capabilities.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Pixel-Art-Editor",
         demoLink: "https://zeeshan-ahmad-dev.github.io/Pixel-Art-Editor/",
       },
@@ -94,7 +94,7 @@ const projects = [
         title: "Personal Dashboard",
         img: "/dashboard.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A personal productivity dashboard featuring task tracking, weather updates, and more.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Personal-Dashboard",
         demoLink: "https://zeeshan-ahmad-dev.github.io/Personal-Dashboard/",
       },
@@ -102,7 +102,7 @@ const projects = [
         title: "Movie Mania",
         img: "/movieMania.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A movie discovery site powered by jQuery for seamless interactions and content display.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/movie-mania/",
         demoLink: "https://zeeshan-ahmad-dev.github.io/movie-mania",
       },
@@ -115,7 +115,7 @@ const projects = [
         title: "LugX Gaming",
         img: "/Lugx.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A gaming website built with Tailwind CSS, featuring a sleek and modern design.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gaming-site",
         demoLink: "https://gaming-lugx.netlify.app/",
       },
@@ -123,11 +123,12 @@ const projects = [
         title: "Netflix UI Clone",
         img: "/Netflix.png",
         description:
-          "This is a description of the card content. You can customize it.",
+          "A responsive Netflix UI clone created with Tailwind CSS for a real-world design experience.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Netflix",
         demoLink: "https://neflix-ui-clone.netlify.app/",
       },
     ],
   },
 ];
+
 </script>
