@@ -27,21 +27,6 @@
 <script setup>
 import ProjectListContainer from "../common/ProjectListContainer.vue";
 
-// Importing images
-import geminiImg from "/assets/gemini1.png";
-import makeupMasteryImg from "/assets/makeupMastery.jpeg";
-import movieInsightImg from "/assets/movie-insight.png";
-
-import youtubeImg from "/assets/youtube.png";
-import tubeWizardImg from "/assets/TubeWizard.png";
-import pixelArtImg from "/assets/PixelArt.png";
-
-import dashboardImg from "/assets/dashboard.png";
-import movieManiaImg from "/assets/movieMania.png";
-
-import lugxImg from "/assets/Lugx.png";
-import netflixImg from "/assets/Netflix.png";
-
 // Project data array containing categories and their respective projects
 const projects = [
   {
@@ -49,7 +34,7 @@ const projects = [
     data: [
       {
         title: "Gemini",
-        img: geminiImg,
+        img: "/gemini1.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gemini",
@@ -57,7 +42,7 @@ const projects = [
       },
       {
         title: "Ecommerce Site",
-        img: makeupMasteryImg,
+        img: "/makeupMastery.jpeg",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/MakeupMastery",
@@ -65,7 +50,7 @@ const projects = [
       },
       {
         title: "Movie-Insight",
-        img: movieInsightImg,
+        img: "/movie-insight.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Movie-Insight",
@@ -78,7 +63,7 @@ const projects = [
     data: [
       {
         title: "Youtube Clone",
-        img: youtubeImg,
+        img: "/youtube.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/youtube-clone/",
@@ -86,7 +71,7 @@ const projects = [
       },
       {
         title: "TubeWizard",
-        img: tubeWizardImg,
+        img: "/TubeWizard.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Tube-wizar/",
@@ -94,7 +79,7 @@ const projects = [
       },
       {
         title: "Pixel Art Editor",
-        img: pixelArtImg,
+        img: "/PixelArt.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Pixel-Art-Editor",
@@ -107,7 +92,7 @@ const projects = [
     data: [
       {
         title: "Personal Dashboard",
-        img: dashboardImg,
+        img: "/dashboard.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Personal-Dashboard",
@@ -115,7 +100,7 @@ const projects = [
       },
       {
         title: "Movie Mania",
-        img: movieManiaImg,
+        img: "/movieMania.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/movie-mania/",
@@ -128,7 +113,7 @@ const projects = [
     data: [
       {
         title: "LugX Gaming",
-        img: lugxImg,
+        img: "/Lugx.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gaming-site",
@@ -136,7 +121,7 @@ const projects = [
       },
       {
         title: "Netflix UI Clone",
-        img: netflixImg,
+        img: "/Netflix.png",
         description:
           "This is a description of the card content. You can customize it.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Netflix",
