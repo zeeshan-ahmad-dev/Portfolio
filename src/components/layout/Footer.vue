@@ -3,19 +3,37 @@
       <IconList />
       <ul class="flex flex-wrap justify-center gap-6 text-sm font-medium text-white sm:text-lg">
         <li>
-          <a href="#home" aria-current="page" class="hover:text-[#f9b703] transition">Home</a>
+          <router-link
+              to="/"
+              class="block hover:text-[#F9B703]"
+              >Home</router-link>
         </li>
         <li>
-          <a href="#about" class="hover:text-[#f9b703] transition">About</a>
+          <router-link
+              to="/about"
+              class="block hover:text-[#F9B703]"
+              >About</router-link>
         </li>
         <li>
-          <a href="#projects" class="hover:text-[#f9b703] transition">Projects</a>
+          <router-link
+              to="/projects"
+              class="block hover:text-[#F9B703]"
+              >Projects</router-link>
+          </li>
+        <li>
+          <router-link
+              to="/skills"
+              class="block hover:text-[#F9B703]"
+              active-class="text-[#F9B703]"
+            >
+          </router-link>
         </li>
         <li>
-          <a href="#skills" class="hover:text-[#f9b703] transition">Skills</a>
-        </li>
-        <li>
-          <a href="#contact" class="hover:text-[#f9b703] transition">Contact</a>
+          <router-link
+              to="/contact"
+              class="block hover:text-[#F9B703]"
+              >Contact</router-link
+            >
         </li>
       </ul>
       <div class="w-full mt-4 overflow-hidden max-w-screen-2xl mx-auto text-center lg:text-[16px] lg:font-semibold text-gray-400">
