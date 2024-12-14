@@ -23,7 +23,7 @@
         <IconsList />
         <a
           class="bg-[#f9b703] hover:shadow-[0px_0px_10px_2px_rgba(249,183,3,0.8)] transition-all border-none px-4 py-2 my-3 gap-2 rounded-full flex items-center justify-center"
-          href="/assets/My CV(Zeeshan Ahmad).pdf"
+          href="/My-CV-Zeeshan-Ahmad.pdf"
           download
           ><i class="fa-solid fa-download animate-bounce"></i>Download CV</a
         >
