@@ -8,7 +8,7 @@
     >
       <img
         class="w-[80%] max-w-[380px] md:max-w-[400px] lg:max-w-[480px] aspect-square rounded-full shadow-[0px_0px_10px_5px_rgba(249,183,3,0.8)] group-hover:shadow-[0px_0px_30px_10px_rgba(249,183,3,0.8)] transition-shadow duration-300 object-cover"
-        src="../../assets/Its me.jpg"
+        src="/Its me.png"
         alt="Your Image"
       />
     </div>
@@ -19,12 +19,12 @@
         About <span class="text-[#f9b703]">Me</span>
       </h2>
       <p>
-        Hello! I am <b>Zeeshan Ahmad</b>, a dedicated frontend developer with a
-        flair for designing and building engaging, responsive, and visually
-        appealing web experiences. I enjoy transforming ideas into reality
-        through code, ensuring functionality and aesthetics work hand in hand.
-        My development journey is driven by a passion for innovation and a
-        constant desire to grow and refine my skills.
+        Hi! I'm <b>Zeeshan Ahmad</b>, a self-taught Full Stack Developer guided
+        by my brother's mentorship. I build real-world web applications, from
+        interactive platforms to full-stack solutions with Vue.js, React,
+        Node.js, Express, MongoDB, and Tailwind CSS. I enjoy turning ideas and
+        designs into functional websites and continuously refining my skills
+        through hands-on projects and challenges.
       </p>
 
       <div class="flex justify-center mt-5 lg:justify-start">

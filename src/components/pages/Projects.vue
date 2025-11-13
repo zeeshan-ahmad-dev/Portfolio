@@ -16,10 +16,11 @@
     <!-- Project List Section -->
     <div class="flex flex-col gap-10 mb-6">
       <!-- Rendering each project category using ProjectListContainer component -->
-      <ProjectListContainer :projects="projects[0]" />
-      <ProjectListContainer :projects="projects[1]" />
-      <ProjectListContainer :projects="projects[2]" />
-      <ProjectListContainer :projects="projects[3]" />
+      <ProjectListContainer
+        v-for="(project, index) in projects"
+        :key="index"
+        :project="project"
+      />
     </div>
   </section>
 </template>
@@ -30,11 +31,32 @@ import ProjectListContainer from "../common/ProjectListContainer.vue";
 // Project data array containing categories and their respective projects
 const projects = [
   {
+    title: "Full Stack Projects",
+    data: [
+      {
+        title: "SoloLevelX",
+        img: "/Projects/SoloLevelX.png",
+        description:
+          "A full stack gamified fitness tracker inspired by Solo Leveling anime with 200+ registerations.",
+        codeLink: "https://github.com/zeeshan-ahmad-dev/Solo-Level-X",
+        demoLink: "https://sololevelx.vercel.app/",
+      },
+      {
+        title: "Instagram Clone",
+        img: "/Projects/Insta_clone.png",
+        description:
+          "An Instagram clone created with MEVN stack featuring features like signup/signin, posts, Like a post, comment on a post etc with authentications",
+        codeLink: "https://github.com/zeeshan-ahmad-dev/instagram_clone",
+        demoLink: "#",
+      },
+    ],
+  },
+  {
     title: "Vue Projects",
     data: [
       {
         title: "Gemini",
-        img: "/gemini1.png",
+        img: "/Projects/gemini1.png",
         description:
           "A web app built with Vue.js that demonstrates clean UI design and responsive layouts.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gemini",
@@ -42,7 +64,7 @@ const projects = [
       },
       {
         title: "Ecommerce Site",
-        img: "/makeupMastery.jpeg",
+        img: "/Projects/makeupMastery.jpeg",
         description:
           "An ecommerce platform focused on beauty products, showcasing user-friendly navigation and design.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/MakeupMastery",
@@ -50,7 +72,7 @@ const projects = [
       },
       {
         title: "Movie-Insight",
-        img: "/movie-insight.png",
+        img: "/Projects/movie-insight.png",
         description:
           "A Vue.js app for browsing and discovering movie information with a stylish interface.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Movie-Insight",
@@ -63,7 +85,7 @@ const projects = [
     data: [
       {
         title: "Youtube Clone",
-        img: "/youtube.png",
+        img: "/Projects/Youtube.png",
         description:
           "A clone of YouTube's frontend, replicating the platform's layout and design for practice.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/youtube-clone/",
@@ -71,7 +93,7 @@ const projects = [
       },
       {
         title: "TubeWizard",
-        img: "/TubeWizard.png",
+        img: "/Projects/TubeWizard.png",
         description:
           "An interactive video management tool built with HTML, CSS, and JavaScript.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Tube-wizar/",
@@ -79,7 +101,7 @@ const projects = [
       },
       {
         title: "Pixel Art Editor",
-        img: "/PixelArt.png",
+        img: "/Projects/PixelArt.png",
         description:
           "A fun and intuitive pixel art editor with grid-based drawing capabilities.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Pixel-Art-Editor",
@@ -92,7 +114,7 @@ const projects = [
     data: [
       {
         title: "Personal Dashboard",
-        img: "/dashboard.png",
+        img: "/Projects/dashboard.png",
         description:
           "A personal productivity dashboard featuring task tracking, weather updates, and more.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Personal-Dashboard",
@@ -100,7 +122,7 @@ const projects = [
       },
       {
         title: "Movie Mania",
-        img: "/movieMania.png",
+        img: "/Projects/movieMania.png",
         description:
           "A movie discovery site powered by jQuery for seamless interactions and content display.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/movie-mania/",
@@ -113,7 +135,7 @@ const projects = [
     data: [
       {
         title: "LugX Gaming",
-        img: "/Lugx.png",
+        img: "/Projects/lugx.png",
         description:
           "A gaming website built with Tailwind CSS, featuring a sleek and modern design.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Gaming-site",
@@ -121,7 +143,7 @@ const projects = [
       },
       {
         title: "Netflix UI Clone",
-        img: "/Netflix.png",
+        img: "/Projects/Netflix.png",
         description:
           "A responsive Netflix UI clone created with Tailwind CSS for a real-world design experience.",
         codeLink: "https://github.com/zeeshan-ahmad-dev/Netflix",
@@ -130,5 +152,4 @@ const projects = [
     ],
   },
 ];
-
 </script>

@@ -13,7 +13,7 @@
     <div class="overflow-hidden text-left rounded-xl md:grid md:grid-cols-2">
       <div class="bg-[#272A34] py-10 px-5 md:px-10">
         <h3 class="mb-12 text-3xl">Write us</h3>
-        <form action="https://formsubmit.co/za5743759@email.com" method="post">
+        <form action="https://formsubmit.co/za5743759@email.com" method="POST">
           <!-- Name -->
           <div class="relative w-full mb-5 group focus-within">
             <input

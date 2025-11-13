@@ -9,7 +9,7 @@
       >
         <img
           class="w-[80%] max-w-[380px] md:max-w-[400px] lg:max-w-[480px] aspect-square rounded-full shadow-[0px_0px_10px_5px_rgba(249,183,3,0.8)] group-hover:shadow-[0px_0px_30px_10px_rgba(249,183,3,0.8)] transition-shadow duration-300 object-cover"
-          src="../../assets/Its me.jpg"
+          src="/Its me.png"
           alt="Your Image"
         />
       </div>
@@ -17,12 +17,13 @@
       <div class="px-6 mt-14 md:mt-10">
         <h4 class="mb-3 text-xl md:text-2xl">About Me</h4>
         <h3 class="mb-5 text-2xl md:text-3xl">
-          Expert <span class="text-[#f9b703]">Frontend Developer</span>
+          Expert <span class="text-[#f9b703]">Full Stack Developer</span>
         </h3>
         <p class="mb-8 text-gray-200 md:text-lg">
-          I'm Zeeshan Ahmad, a Front-End Developer skilled in Vue.js, Tailwind
-          CSS, and jQuery. I create responsive, dynamic, and user-focused web
-          interfaces with clean design and seamless performance.
+          I'm Zeeshan Ahmad, a full stack developer building dynamic,
+          responsive, and user-focused websites. I work with Vue.js, React.js, Tailwind
+          CSS, jQuery, Node.js, Express, and databases like MongoDB and MySQL to
+          create real-world projects with clean code and practical interfaces.
         </p>
         <div class="my-10">
           <div class="grid flex-col gap-4 lg:grid-cols-2 md:flex-row md:gap-4">
@@ -44,7 +45,7 @@
               <p
                 class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
               >
-                Frontend Developer
+                Full Stack Developer
               </p>
             </div>
             <div class="flex items-center gap-2">
@@ -65,7 +66,7 @@
               <p
                 class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
               >
-                Vue.js, Tailwind CSS and jQuery
+                Building modern web apps with clean architecture
               </p>
             </div>
             <div class="flex items-center gap-2">
@@ -86,7 +87,7 @@
               <p
                 class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
               >
-                Dynamic & Responsive Apps
+                Focused on quality, speed, and scalability
               </p>
             </div>
             <div class="flex items-center gap-2">
@@ -132,7 +133,7 @@
             </div>
             <h3 class="text-xl font-bold text-[#f9b703]">Matriculation</h3>
             <p class="mt-2 font-bold text-gray-200">
-              F.G Public School Nowshera Cantt No.1
+              F.G Public School Nowshera Cantt No.1(for boys)
             </p>
             <p class="font-medium text-gray-500">2021 - 2023</p>
           </div>
@@ -150,37 +151,66 @@
             </p>
             <p class="font-medium text-gray-500">2023 - 2025</p>
           </div>
-        </div>
-      </div>
-
-      <div class="mt-10 text-center">
-        <h1 class="text-4xl font-bold text-white">Skills</h1>
-        <div class="grid gap-8 mt-12 md:grid-cols-2">
-          <!-- Skill Items -->
           <div
             class="p-6 text-center transition-transform duration-300 transform bg-[#191919] rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl"
           >
             <div class="mb-4 text-5xl text-[#f9b703]">
-              <i class="fas fa-code"></i>
+              <i class="fas fa-school"></i>
             </div>
             <h3 class="text-xl font-bold text-[#f9b703]">
-              Frontend Development
+              BS Software Engineering (In Progress)
             </h3>
             <p class="mt-2 font-bold text-gray-200">
-              Vue.js, Tailwind CSS, jQuery
+              Virtual University of Pakistan
             </p>
+            <p class="font-medium text-gray-500">2025 - present</p>
           </div>
-          <div
-            class="p-6 text-center transition-transform duration-300 transform bg-[#191919] rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl"
-          >
-            <div class="mb-4 text-5xl text-[#f9b703]">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3 class="text-xl font-bold text-[#f9b703]">UI/UX Design</h3>
-            <p class="mt-2 font-bold text-gray-200">
-              Focused on responsive and dynamic interfaces
-            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      class="w-full text-white px-6 py-16 border-t border-[#ffffff0b] max-w-screen-2xl mx-auto text-center"
+    >
+      <h2 class="mb-10 text-4xl font-bold">Skills</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="p-6 bg-[#191919] rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <div class="text-5xl text-[#f9b703] mb-4">
+            <i class="fas fa-code"></i>
           </div>
+          <h3 class="text-xl font-bold text-[#f9b703]">Frontend & UI/UX</h3>
+          <p class="mt-2 text-gray-200">
+            Vue.js, React, Tailwind CSS, animations, and responsive layouts
+          </p>
+        </div>
+
+        <div
+          class="p-6 bg-[#191919] rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <div class="text-5xl text-[#f9b703] mb-4">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#f9b703]">Backend Development</h3>
+          <p class="mt-2 text-gray-200">
+            Node.js, Express.js, MongoDB, MySQL, RESTful APIs
+          </p>
+        </div>
+
+        <div
+          class="p-6 bg-[#191919] rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <div class="text-5xl text-[#f9b703] mb-4">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#f9b703]">
+            Version Control & Workflow
+          </h3>
+          <p class="mt-2 text-gray-200">
+            Git, GitHub
+          </p>
         </div>
       </div>
     </section>
