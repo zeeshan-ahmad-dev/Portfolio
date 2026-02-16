@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative aspect-[16/9] bg-[#202229] rounded-lg flex items-center justify-center overflow-hidden perspective-1000 shadow-[0_5px_15px_rgba(0,0,0,0.3)] transition-transform duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-xl"
+    class="group relative aspect-[16/9] bg-[#202229] rounded-lg flex items-center justify-center overflow-hidden perspective-1000 shadow-[0_5px_15px_rgba(0,0,0,0.3)] transition-transform duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-100 hover:shadow-xl"
   >
     <!-- Icon or Image -->
     <img
@@ -11,14 +11,19 @@
 
     <!-- Content -->
     <div
-      class="absolute flex flex-col justify-evenly inset-0 p-5 bg-[#202229] [transform:rotateX(-90deg)] origin-bottom transition-transform duration-300 ease-[cubic-bezier(0.42, 0, 1, 0.47)] group-hover:[transform:rotateX(0deg)]"
-    >
+  class="absolute flex flex-col justify-evenly inset-0 p-5 bg-[#202229] 
+  backface-hidden preserve-3d gpu-fix
+  [transform:rotateX(-90deg)] origin-bottom 
+  transition-transform duration-300 ease-[cubic-bezier(0.42,0,1,0.47)] 
+  group-hover:[transform:rotateX(0deg)]"
+>
       <h3 class="text-xl font-bold text-[#f9b703]">{{ data.title }}</h3>
       <p class="mt-2 text-sm text-white">
         {{ data.description }}
       </p>
       <div class="flex justify-center gap-2 mt-4">
         <a
+          v-if="data.codeLink"
           :href="data.codeLink"
           target="_blank"
           class="px-4 cursor-pointer py-2 text-white transition bg-[#f9b703] rounded-md hover:bg-yellow-600"

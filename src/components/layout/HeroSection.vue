@@ -27,7 +27,7 @@
         <IconsList />
         <a
           class="bg-[#f9b703] hover:shadow-[0px_0px_10px_2px_rgba(249,183,3,0.8)] transition-all border-none px-4 py-2 my-3 gap-2 rounded-full flex items-center justify-center"
-          href="/My-CV-Zeeshan-Ahmad.pdf"
+          href="/Zeeshan-Ahmad-CV.pdf"
           download
         >
           <i class="fa-solid fa-download animate-bounce"></i> Download CV
@@ -40,7 +40,7 @@
     >
       <img
         class="w-[80%] max-w-[380px] md:max-w-[400px] lg:max-w-[480px] aspect-square rounded-full shadow-[0px_0px_10px_5px_rgba(249,183,3,0.8)] group-hover:shadow-[0px_0px_30px_10px_rgba(249,183,3,0.8)] transition-shadow duration-300 object-cover"
-        src="/Its me.png"
+        :src="assets.Avatar"
         alt="Your Image"
       />
     </div>
@@ -50,6 +50,7 @@
 <script setup>
 import { onMounted, ref, onBeforeUnmount } from "vue";
 import IconsList from "../common/IconsList.vue";
+import assets from "../../assets/assets";
 
 const typedText = ref("");
 const fullText = ["Zeeshan Ahmad", "Full Stack Developer"];

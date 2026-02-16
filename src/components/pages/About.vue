@@ -9,7 +9,7 @@
       >
         <img
           class="w-[80%] max-w-[380px] md:max-w-[400px] lg:max-w-[480px] aspect-square rounded-full shadow-[0px_0px_10px_5px_rgba(249,183,3,0.8)] group-hover:shadow-[0px_0px_30px_10px_rgba(249,183,3,0.8)] transition-shadow duration-300 object-cover"
-          src="/Its me.png"
+          :src="assets.Avatar"
           alt="Your Image"
         />
       </div>
@@ -217,4 +217,7 @@
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+import assets from '../../assets/assets';
+
+</script>

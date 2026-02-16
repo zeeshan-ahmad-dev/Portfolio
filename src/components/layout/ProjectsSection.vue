@@ -22,58 +22,19 @@
       class="grid grid-cols-1 gap-8 px-6 mt-8 mb-6 md:grid-cols-2 lg:px-20"
     >
       <div
+        v-for="(project, index) of projects"
+        :key="index"
         class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
       >
         <img
-          src="/Projects/gemini1.png"
-          alt="Gemini Project"
+          :src="project.img"
+          :alt="project.alt"
           class="w-full h-auto"
         />
         <div
           class="absolute inset-0 flex items-center justify-center text-lg font-medium text-white transition-opacity duration-300 bg-black opacity-0 bg-opacity-60 hover:opacity-100"
         >
-          Gemini Project
-        </div>
-      </div>
-
-      <div
-        class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
-      >
-        <img
-          src="/Projects/TubeWizard.png"
-          alt="Tube Wizard"
-          class="w-full h-auto"
-        />
-        <div
-          class="absolute inset-0 flex items-center justify-center text-lg font-medium text-white transition-opacity duration-300 bg-black opacity-0 bg-opacity-60 hover:opacity-100"
-        >
-          Tube Wizard
-        </div>
-      </div>
-
-      <div
-        class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
-      >
-        <img src="/Projects/lugx.png" alt="Lugx Project" class="w-full h-auto" />
-        <div
-          class="absolute inset-0 flex items-center justify-center text-lg font-medium text-white transition-opacity duration-300 bg-black opacity-0 bg-opacity-60 hover:opacity-100"
-        >
-          Lugx Project
-        </div>
-      </div>
-
-      <div
-        class="relative overflow-hidden transition-transform duration-300 border-2 border-yellow-300 rounded-lg hover:scale-105 hover:shadow-lg"
-      >
-        <img
-          src="/Projects/dashboard.png"
-          alt="Dashboard Project"
-          class="w-full h-auto"
-        />
-        <div
-          class="absolute inset-0 flex items-center justify-center text-lg font-medium text-white transition-opacity duration-300 bg-black opacity-0 bg-opacity-60 hover:opacity-100"
-        >
-          Dashboard Project
+          {{ project.title }}
         </div>
       </div>
     </section>
@@ -91,4 +52,30 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import assets from '../../assets/assets';
+
+const projects = [
+  {
+    img: assets.Gemini,
+    alt: "Gemini Project",
+    title: "Gemini Project"
+  },
+  {
+    img: assets.SoloLevelX,
+    alt: "SoloLevelX",
+    title: "SoloLevelX"
+  },
+  {
+    img: assets.Lugx,
+    alt: "Lugx Project",
+    title: "Lugx Project"
+  },
+  {
+    img: assets.Dashboard,
+    alt: "Dashboard Project",
+    title: "Dashboard Project"
+  }
+];
+
+</script>
