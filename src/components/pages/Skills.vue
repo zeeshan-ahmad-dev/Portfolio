@@ -1,22 +1,37 @@
 <template>
-  <section
-    class="bg-[#050505] px-6 pb-5 border-[1px] border-[#ffffff0b] text-white pt-32 md:px-20 md:pt-40 lg:pt-36 text-center"
-  >
-    <h2 class="mb-6 text-xl font-bold text-[#f9b703] md:text-4xl">My Skills</h2>
-    <p class="mb-10 font-semibold text-gray-400">
-      The Tech Stack Behind My Web Development Projects
-    </p>
-    <div
-      class="grid grid-cols-2 gap-6 mb-16 md:mb-28 lg:mb-20 sm:grid-cols-3 lg:grid-cols-4"
-    >
-      <div
-        v-for="tech in technologies"
-        :key="tech.name"
-        class="flex flex-col items-center p-4 transition-transfrom duration-300 rounded-lg bg-[#191919] hover:scale-105"
-      >
-        <img :src="tech.icon" :alt="tech.name" class="h-16 mb-4" />
-        <p class="text-lg font-semibold">{{ tech.name }}</p>
+  <section class="relative bg-[#080808] min-h-screen overflow-hidden">
+
+    <!-- Grid background -->
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(249,183,3,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(249,183,3,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black_40%,transparent_100%)]"></div>
+
+    <!-- Glow orbs -->
+    <div class="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-[rgba(249,183,3,0.06)] blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-[-50px] left-[-100px] w-[300px] h-[300px] rounded-full bg-[rgba(249,183,3,0.04)] blur-[100px] pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-[1200px] mx-auto px-6 md:px-12 pt-32 pb-20">
+
+      <!-- Header -->
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-extrabold text-white md:text-5xl">
+          My <span class="text-[#f9b703]">Skills.</span>
+        </h2>
+        <p class="text-[#888] text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+          The tech stack behind my web development projects.
+        </p>
       </div>
+
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+        <div
+          v-for="tech in technologies"
+          :key="tech.name"
+          class="group flex flex-col items-center gap-3 p-5 rounded-xl border border-[rgba(249,183,3,0.1)] hover:border-[rgba(249,183,3,0.35)] bg-[rgba(255,255,255,0.02)] hover:bg-[rgba(249,183,3,0.04)] transition-all duration-300 hover:-translate-y-1"
+        >
+          <img :src="tech.icon" :alt="tech.name" class="object-contain w-10 h-10" />
+          <span class="text-[#888] group-hover:text-white text-xs font-medium transition-colors duration-300 text-center">{{ tech.name }}</span>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
@@ -37,6 +52,4 @@ const technologies = [
   { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" }
 ];
-
-
 </script>

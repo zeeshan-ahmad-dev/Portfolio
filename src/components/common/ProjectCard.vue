@@ -1,41 +1,36 @@
 <template>
   <div
-    class="group relative aspect-[16/9] bg-[#202229] rounded-lg flex items-center justify-center overflow-hidden perspective-1000 shadow-[0_5px_15px_rgba(0,0,0,0.3)] transition-transform duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-100 hover:shadow-xl"
+    class="group relative aspect-[16/9] rounded-xl overflow-hidden border border-[rgba(249,183,3,0.12)] hover:border-[rgba(249,183,3,0.35)] shadow-[0_5px_20px_rgba(0,0,0,0.4)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.6)] perspective-1000"
   >
-    <!-- Icon or Image -->
+    <!-- Image -->
     <img
-      class="w-full transition-transform duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] group-hover:scale-90 group-hover:opacity-50"
+      class="w-full h-full object-cover transition-transform duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] group-hover:scale-90 group-hover:opacity-40"
       :src="data.img"
       :alt="data.title"
     />
 
-    <!-- Content -->
+    <!-- Flip content -->
     <div
-  class="absolute flex flex-col justify-evenly inset-0 p-5 bg-[#202229] 
-  backface-hidden preserve-3d gpu-fix
-  [transform:rotateX(-90deg)] origin-bottom 
-  transition-transform duration-300 ease-[cubic-bezier(0.42,0,1,0.47)] 
-  group-hover:[transform:rotateX(0deg)]"
->
-      <h3 class="text-xl font-bold text-[#f9b703]">{{ data.title }}</h3>
-      <p class="mt-2 text-sm text-white">
-        {{ data.description }}
-      </p>
-      <div class="flex justify-center gap-2 mt-4">
+      class="absolute inset-0 flex flex-col justify-between p-5 bg-[rgba(8,8,8,0.95)] backface-hidden [transform:rotateX(-90deg)] origin-bottom transition-transform duration-300 ease-[cubic-bezier(0.42,0,1,0.47)] group-hover:[transform:rotateX(0deg)]"
+    >
+      <div>
+        <h3 class="mb-2 text-lg font-bold text-white">{{ data.title }}</h3>
+        <p class="text-xs text-[#888] leading-relaxed">{{ data.description }}</p>
+      </div>
+      <div class="flex gap-2">
         <a
           v-if="data.codeLink"
           :href="data.codeLink"
           target="_blank"
-          class="px-4 cursor-pointer py-2 text-white transition bg-[#f9b703] rounded-md hover:bg-yellow-600"
+          class="flex-1 text-center text-xs font-semibold px-3 py-2 bg-[#f9b703] hover:bg-[#ffc929] text-black rounded-lg transition-all duration-200"
         >
           View Code
         </a>
         <a
-          v-if="!(data.demoLink === '#')"
+          v-if="data.demoLink && data.demoLink !== '#'"
           :href="data.demoLink"
           target="_blank"
-          class="px-4 cursor-pointer py-2 text-[#f9b703] transition border border-[#f9b703] rounded-md hover:bg-[#f9b703]/10"
-          @click="handleDemoClick"
+          class="flex-1 text-center text-xs font-semibold px-3 py-2 border border-[rgba(249,183,3,0.4)] text-[#f9b703] hover:bg-[rgba(249,183,3,0.08)] rounded-lg transition-all duration-200"
         >
           Live Demo
         </a>

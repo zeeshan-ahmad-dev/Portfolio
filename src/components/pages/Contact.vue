@@ -1,134 +1,117 @@
 <template>
-  <section
-    class="text-white text-center bg-[#050505] border-[1px] border-[#ffffff0b] pt-36 pb-14 px-4 md:px-20 md:pt-40 lg:pt-36"
-  >
-    <h2 class="mb-6 text-3xl font-bold md:text-4xl">
-      Get in <span class="text-[#f9b703]">Touch</span>
-    </h2>
-    <p class="mb-10 font-semibold text-gray-400">
-      I love to hear from you! Whether you have a question, need support, or
-      just want to say hello, feel free to reach out to me.
-    </p>
+  <section class="relative bg-[#080808] min-h-screen overflow-hidden">
 
-    <div class="overflow-hidden text-left rounded-xl md:grid md:grid-cols-2">
-      <div class="bg-[#272A34] py-10 px-5 md:px-10">
-        <h3 class="mb-12 text-3xl">Write us</h3>
-        <form action="https://formsubmit.co/za5743759@email.com" method="POST">
-          <!-- Name -->
-          <div class="relative w-full mb-5 group focus-within">
-            <input
-              type="text"
-              id="name"
-              placeholder="Name"
-              name="name"
-              class="w-full py-3 text-gray-200 bg-transparent border-none outline-none"
-              required
-            />
-            <div
-              class="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 group-focus-within:bg-gray-300 transition-colors duration-100"
-            ></div>
-          </div>
+    <!-- Grid background -->
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(249,183,3,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(249,183,3,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black_40%,transparent_100%)]"></div>
 
-          <!-- Email -->
-          <div class="relative w-full mb-5 group focus-within">
-            <input
-              type="email"
-              id="email"
-              placeholder="Email"
-              name="email"
-              class="w-full py-3 text-gray-200 bg-transparent border-none outline-none"
-              required
-            />
-            <div
-              class="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 group-focus-within:bg-gray-300 transition-colors duration-100"
-            ></div>
-          </div>
+    <!-- Glow orbs -->
+    <div class="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-[rgba(249,183,3,0.06)] blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-[-50px] left-[-100px] w-[300px] h-[300px] rounded-full bg-[rgba(249,183,3,0.04)] blur-[100px] pointer-events-none"></div>
 
-          <!-- Subject -->
-          <div class="relative w-full mb-5 group focus-within">
-            <input
-              type="text"
-              id="subject"
-              placeholder="Subject"
-              name="subject"
-              class="w-full py-3 text-gray-200 bg-transparent border-none outline-none"
-              required
-            />
-            <div
-              class="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 group-focus-within:bg-gray-300 transition-colors duration-100"
-            ></div>
-          </div>
+    <div class="relative z-10 max-w-[1200px] mx-auto px-6 md:px-12 pt-32 pb-20">
 
-          <!-- Text Area -->
-          <div class="relative w-full mb-5 group focus-within">
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Message"
-              class="w-full py-3 text-gray-200 bg-transparent border-none outline-none"
-              required
-            ></textarea>
-            <div
-              class="absolute bottom-0 left-0 w-full h-[1px] bg-gray-500 group-focus-within:bg-gray-300 transition-colors duration-100"
-            ></div>
-          </div>
-
-          <!-- Submit Button -->
-          <button
-            type="submit"
-            class="bg-[#f9b703] hover:shadow-[0px_0px_10px_2px_rgba(249,183,3,0.8)] transition-all border-none px-4 py-3 my-3 gap-2 rounded-sm"
-          >
-            Send Message
-          </button>
-        </form>
-        <!-- Contact Info -->
-      </div>
-      <div class="bg-[#1C1E25] py-10 px-5 md:py-12 md:px-8">
-        <h3 class="mb-2 text-xl md:text-2xl">Contact Information</h3>
-        <p class="text-[#666666]">
-          We're open for any suggestion or just to have a chat
+      <!-- Header -->
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-extrabold text-white md:text-5xl">
+          Get in <span class="text-[#f9b703]">Touch.</span>
+        </h2>
+        <p class="text-[#888] text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+          Have a project in mind or just want to say hello? Feel free to reach out.
         </p>
-        <div class="md:space-y-4">
-          <div class="flex flex-col w-full">
-            <div class="flex items-center gap-3 pt-5">
-              <span
-                class="bg-[#202229] hover:bg-gray-500 text-white h-[45px] w-[45px] rounded-full flex items-center justify-center text-sm md:text-lg md:h-[50px] md:w-[50px]"
-                ><i class="fa-solid fa-phone"></i
-              ></span>
-              <p>
-                Phone: <span class="text-[#666666] ml-1">0304-5759756</span>
-              </p>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <!-- Form -->
+        <div class="p-8 rounded-xl border border-[rgba(249,183,3,0.12)] bg-[rgba(255,255,255,0.02)]">
+          <h3 class="mb-8 text-xl font-bold text-white">Send a Message</h3>
+          <form action="https://formsubmit.co/za5743759@email.com" method="POST" class="flex flex-col gap-6">
+
+            <div class="relative group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                class="w-full py-3 text-white bg-transparent border-none outline-none text-sm placeholder-[#555]"
+              />
+              <div class="absolute bottom-0 left-0 w-full h-px bg-[rgba(255,255,255,0.08)] group-focus-within:bg-[#f9b703] transition-colors duration-200"></div>
             </div>
-          </div>
-          <div class="flex flex-col">
-            <div class="flex items-center gap-3 pt-5">
-              <div
-                class="bg-[#202229] hover:bg-gray-500 text-white h-[45px] w-[45px] rounded-full flex items-center justify-center text-sm md:text-lg md:h-[50px] md:w-[50px]"
-              >
-                <i class="fa-solid fa-location-dot"></i>
+
+            <div class="relative group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="w-full py-3 text-white bg-transparent border-none outline-none text-sm placeholder-[#555]"
+              />
+              <div class="absolute bottom-0 left-0 w-full h-px bg-[rgba(255,255,255,0.08)] group-focus-within:bg-[#f9b703] transition-colors duration-200"></div>
+            </div>
+
+            <div class="relative group">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+                class="w-full py-3 text-white bg-transparent border-none outline-none text-sm placeholder-[#555]"
+              />
+              <div class="absolute bottom-0 left-0 w-full h-px bg-[rgba(255,255,255,0.08)] group-focus-within:bg-[#f9b703] transition-colors duration-200"></div>
+            </div>
+
+            <div class="relative group">
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                required
+                class="w-full py-3 text-white bg-transparent border-none outline-none text-sm placeholder-[#555] resize-none"
+              ></textarea>
+              <div class="absolute bottom-0 left-0 w-full h-px bg-[rgba(255,255,255,0.08)] group-focus-within:bg-[#f9b703] transition-colors duration-200"></div>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-[#f9b703] hover:bg-[#ffc929] text-black font-semibold text-sm py-3 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(249,183,3,0.35)]"
+            >
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="p-8 rounded-xl border border-[rgba(249,183,3,0.12)] bg-[rgba(255,255,255,0.02)] flex flex-col justify-between">
+          <div>
+            <h3 class="mb-2 text-xl font-bold text-white">Contact Information</h3>
+            <p class="text-[#555] text-sm mb-10">Open for any suggestion or just a chat.</p>
+
+            <div class="flex flex-col gap-6">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-lg bg-[rgba(249,183,3,0.08)] border border-[rgba(249,183,3,0.2)] flex items-center justify-center text-[#f9b703] flex-shrink-0">
+                  <i class="text-xs fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="text-[#555] text-xs mb-0.5">Phone</p>
+                  <p class="text-sm font-medium text-white">0304-5759756</p>
+                </div>
               </div>
-              <p class="w-[80%]">
-                Address:
-                <span class="text-[#666666]"
-                  >Hakim abad, Nowshera, KPK, Pakistan</span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col w-max">
-            <div class="flex items-center gap-3 pt-5">
-              <span
-                class="bg-[#202229] hover:bg-gray-500 text-white h-[45px] w-[45px] rounded-full flex items-center justify-center text-sm md:text-lg md:h-[50px] md:w-[50px]"
-                ><i class="fa-regular fa-envelope"></i
-              ></span>
-              <p>
-                Email:
-                <span class="ml-1 text-[#666666]">za5743759@gmail.com</span>
-              </p>
+
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-lg bg-[rgba(249,183,3,0.08)] border border-[rgba(249,183,3,0.2)] flex items-center justify-center text-[#f9b703] flex-shrink-0">
+                  <i class="text-xs fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="text-[#555] text-xs mb-0.5">Email</p>
+                  <p class="text-sm font-medium text-white">za5743759@gmail.com</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>

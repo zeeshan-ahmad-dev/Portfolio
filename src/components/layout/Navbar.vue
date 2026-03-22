@@ -1,139 +1,69 @@
 <template>
   <header class="fixed top-0 z-50 w-full">
-    <nav
-      aria-label="Main Navigation"
-      class="relative px-6 py-6 lg:px-24 bg-[#050505]"
-    >
-      <div class="relative z-50 flex justify-between">
-        <h1 class="text-xl font-bold text-white lg:text-3xl">
-          Portfolio <span style="color: #f9b703">Z.</span>
-        </h1>
-        <ul class="hidden gap-6 text-lg font-medium text-white md:flex">
-          <li class="relative group">
+    <nav class="px-6 py-4 lg:px-32 bg-[rgba(8,8,8,0.85)] backdrop-blur-md border-b-2 border-[rgba(249,183,3,0.08)]">
+      <div class="flex justify-between items-center max-w-[1200px] mx-auto">
+
+        <!-- Logo -->
+        <router-link to="/" class="text-xl font-extrabold tracking-tight text-white lg:text-2xl">
+          Zeeshan<span class="text-[#f9b703]">.</span>
+        </router-link>
+
+        <!-- Desktop links -->
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-[#888]">
+          <li v-for="link in links" :key="link.to">
             <router-link
-              to="/"
-              aria-current="page"
-              class="hover:text-[#f9b703]"
-              active-class="text-[#f9b703]"
-              >Home</router-link
-            >
-            <span
-              class="absolute left-0 bottom-0 w-0 h-1 bg-[#f9b703] transition-all duration-300 group-hover:w-full"
-            ></span>
+              :to="link.to"
+              class="transition-colors duration-200 hover:text-white"
+              active-class="text-[#f9b703] hover:text-[#f9b703]"
+            >{{ link.label }}</router-link>
           </li>
-          <li class="relative group">
-            <router-link
-              to="about"
-              class="hover:text-[#f9b703]"
-              active-class="text-[#f9b703]"
-              >About</router-link
+          <li>
+            <a
+              href="/Zeeshan-Ahmad-CV.pdf"
+              download
+              class="flex items-center gap-2 bg-[#f9b703] hover:bg-[#ffc929] text-black font-semibold text-sm px-4 py-2 rounded-lg transition-all duration-200 hover:-translate-y-0.5"
             >
-            <span
-              class="absolute left-0 bottom-0 w-0 h-1 bg-[#f9b703] transition-all duration-300 group-hover:w-full"
-            ></span>
-          </li>
-          <li class="relative group">
-            <router-link
-              to="projects"
-              class="hover:text-[#f9b703]"
-              active-class="text-[#f9b703]"
-              >Projects</router-link
-            >
-            <span
-              class="absolute left-0 bottom-0 w-0 h-1 bg-[#f9b703] transition-all duration-300 group-hover:w-full"
-            ></span>
-          </li>
-          <li class="relative group">
-            <router-link
-              to="skills"
-              class="hover:text-[#f9b703]"
-              active-class="text-[#f9b703]"
-              >Skills</router-link
-            >
-            <span
-              class="absolute left-0 bottom-0 w-0 h-1 bg-[#f9b703] transition-all duration-300 group-hover:w-full"
-            ></span>
-          </li>
-          <li class="relative group">
-            <router-link
-              to="contact"
-              class="hover:text-[#f9b703]"
-              active-class="text-[#f9b703]"
-              >Contact</router-link
-            >
-            <span
-              class="absolute left-0 bottom-0 w-0 h-1 bg-[#f9b703] transition-all duration-300 group-hover:w-full"
-            ></span>
+              <i class="text-xs fa-solid fa-download"></i>
+              Download CV
+            </a>
           </li>
         </ul>
 
-        <!-- For smaller screens -->
-        <button @click="toggleMenu" class="md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="white"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+        <!-- Mobile menu button -->
+        <button @click="toggleMenu" class="text-white md:hidden">
+          <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
+
       </div>
+
+      <!-- Mobile menu -->
       <transition name="navbar" appear>
         <ul
           v-show="isMenuOpen"
-          class="absolute top-full left-0 z-40 w-full px-6 py-4 space-y-4 text-lg font-semibold text-center text-white bg-[#060606] md:hidden"
+          class="md:hidden mt-4 pb-4 space-y-3 text-sm font-medium text-center border-t border-[rgba(249,183,3,0.08)] pt-4"
         >
-          <li>
+          <li v-for="link in links" :key="link.to">
             <router-link
-              to="/"
-              class="block hover:text-[#F9B703]"
-              active-class="text-[#F9B703]"
+              :to="link.to"
+              class="block py-1 text-[#888] hover:text-white transition-colors duration-200"
+              active-class="text-[#f9b703] hover:text-[#f9b703]"
               @click="toggleMenu"
-              >Home</router-link
-            >
+            >{{ link.label }}</router-link>
           </li>
           <li>
-            <router-link
-              to="/about"
-              class="block hover:text-[#F9B703]"
-              active-class="text-[#F9B703]"
-              @click="toggleMenu"
-              >About</router-link
+            <a
+              href="/Zeeshan-Ahmad-CV.pdf"
+              download
+              class="inline-flex items-center gap-2 bg-[#f9b703] text-black font-semibold text-sm px-4 py-2 rounded-lg mt-2"
             >
-          </li>
-          <li>
-            <router-link
-              to="/projects"
-              class="block hover:text-[#F9B703]"
-              active-class="text-[#F9B703]"
-              @click="toggleMenu"
-              >Projects</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              to="/skills"
-              class="block hover:text-[#F9B703]"
-              active-class="text-[#F9B703]"
-              @click="toggleMenu"
-              >Skills</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              to="/contact"
-              class="block hover:text-[#F9B703]"
-              active-class="text-[#F9B703]"
-              @click="toggleMenu"
-              >Contact</router-link
-            >
+              <i class="text-xs fa-solid fa-download"></i>
+              Download CV
+            </a>
           </li>
         </ul>
       </transition>
@@ -149,32 +79,21 @@ const isMenuOpen = ref(false);
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
+
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/projects", label: "Projects" },
+  { to: "/skills", label: "Skills" },
+  { to: "/contact", label: "Contact" },
+];
 </script>
 
 <style>
-/* Enter Classes */
-.navbar-enter-from {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-.navbar-enter-to {
-  opacity: 1;
-  transform: translateY(0);
-}
-.navbar-enter-active {
-  transition: all 0.3s ease;
-}
-
-/* Leave Classes */
-.navbar-leave-from {
-  opacity: 1;
-  transform: translateY(0);
-}
-.navbar-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-.navbar-leave-active {
-  transition: all 0.3s ease-in;
-}
+.navbar-enter-from { opacity: 0; transform: translateY(-10px); }
+.navbar-enter-to { opacity: 1; transform: translateY(0); }
+.navbar-enter-active { transition: all 0.3s ease; }
+.navbar-leave-from { opacity: 1; transform: translateY(0); }
+.navbar-leave-to { opacity: 0; transform: translateY(-10px); }
+.navbar-leave-active { transition: all 0.3s ease-in; }
 </style>

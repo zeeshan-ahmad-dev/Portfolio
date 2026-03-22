@@ -1,10 +1,10 @@
 <template>
-  <div class="text-center">
-    <h3 class="mb-5 text-xl font-bold text-white">{{ project.title }}</h3>
+  <div>
+    <h3 class="text-center text-lg font-semibold text-[#f9b703] uppercase tracking-widest mb-5 pb-2 border-b border-[rgba(249,183,3,0.12)]">
+      {{ project.title }}
+    </h3>
     <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-      <template v-for="(project, index) in project.data" :key="index">
-        <ProjectCard :data="project" />
-      </template>
+      <ProjectCard v-for="(item, index) in project.data" :key="index" :data="item" />
     </div>
   </div>
 </template>
@@ -14,5 +14,5 @@ import ProjectCard from "../common/ProjectCard.vue";
 
 defineProps({
   project: Object
-})
+});
 </script>

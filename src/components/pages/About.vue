@@ -1,216 +1,81 @@
 <template>
-  <main class="bg-[#050505]">
-    <section
-      class="bg-[#050505] mt-[60px] border-b-[1px] border-[#ffffff0b] text-white flex lg:grid lg:grid-cols-2 lg:place-items-center md:px-20 lg:px-16 md:py-6 lg:py-20 flex-col items-center"
-    >
-      <!-- Left side - Image -->
+  <main class="bg-[#080808]">
+    <!-- Hero About Section -->
+    <section class="relative bg-[#080808] mt-[60px] overflow-hidden">
+      <!-- Grid background -->
       <div
-        class="mt-16 lg:mt-2 rounded-full border-[#f9b703] group flex justify-center"
+        class="absolute inset-0 bg-[linear-gradient(rgba(249,183,3,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(249,183,3,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black_40%,transparent_100%)]"
+      ></div>
+      <div
+        class="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] rounded-full bg-[rgba(249,183,3,0.06)] blur-[100px] pointer-events-none"
+      ></div>
+
+      <div
+        class="relative z-10 max-w-[1200px] mx-auto px-6 md:px-12 py-20 flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-12 lg:gap-16"
       >
-        <img
-          class="w-[80%] max-w-[380px] md:max-w-[400px] lg:max-w-[480px] aspect-square rounded-full shadow-[0px_0px_10px_5px_rgba(249,183,3,0.8)] group-hover:shadow-[0px_0px_30px_10px_rgba(249,183,3,0.8)] transition-shadow duration-300 object-cover"
-          :src="assets.Avatar"
-          alt="Your Image"
-        />
-      </div>
-      <!-- Right Side - Description -->
-      <div class="px-6 mt-14 md:mt-10">
-        <h4 class="mb-3 text-xl md:text-2xl">About Me</h4>
-        <h3 class="mb-5 text-2xl md:text-3xl">
-          Expert <span class="text-[#f9b703]">Full Stack Developer</span>
-        </h3>
-        <p class="mb-8 text-gray-200 md:text-lg">
-          I'm Zeeshan Ahmad, a full stack developer building dynamic,
-          responsive, and user-focused websites. I work with Vue.js, React.js, Tailwind
-          CSS, jQuery, Node.js, Express, and databases like MongoDB and MySQL to
-          create real-world projects with clean code and practical interfaces.
-        </p>
-        <div class="my-10">
-          <div class="grid flex-col gap-4 lg:grid-cols-2 md:flex-row md:gap-4">
-            <div class="flex items-center gap-2">
-              <div class="text-3xl font-extrabold text-[#f9b703]">
-                <svg
-                  class="w-8 h-8 p-1 border-2 border-[#f9b703] rounded-full"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M20 6L9 17l-5-5"></path>
-                </svg>
-              </div>
-              <p
-                class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
-              >
-                Full Stack Developer
-              </p>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="text-3xl font-extrabold text-[#f9b703]">
-                <svg
-                  class="w-8 h-8 p-1 border-2 border-[#f9b703] rounded-full"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M20 6L9 17l-5-5"></path>
-                </svg>
-              </div>
-              <p
-                class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
-              >
-                Building modern web apps with clean architecture
-              </p>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="text-3xl font-extrabold text-[#f9b703]">
-                <svg
-                  class="w-8 h-8 p-1 border-2 border-[#f9b703] rounded-full"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M20 6L9 17l-5-5"></path>
-                </svg>
-              </div>
-              <p
-                class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
-              >
-                Focused on quality, speed, and scalability
-              </p>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="text-3xl font-extrabold text-[#f9b703]">
-                <svg
-                  class="w-8 h-8 p-1 border-2 border-[#f9b703] rounded-full"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M20 6L9 17l-5-5"></path>
-                </svg>
-              </div>
-              <p
-                class="font-semibold text-gray-400 sm:font-bold hover:text-[#f9b703]"
-              >
-                Innovation & Learning Focused
-              </p>
-            </div>
+        <!-- Left: Image -->
+        <div
+          class="relative w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px]"
+        >
+          <div
+            class="absolute -inset-1 rounded-full p-[3px] bg-[conic-gradient(from_0deg,#f9b703,transparent_40%,transparent_60%,#f9b703_100%)] animate-spin [animation-duration:5s]"
+          ></div>
+          <div class="w-full relative h-full rounded-full bg-[#080808] p-1.5">
+            <img
+              :src="assets.Avatar"
+              alt="Zeeshan Ahmad"
+              class="object-cover w-full h-full rounded-full"
+            />
           </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="text-center lg:text-left">
+          <h2 class="mb-6 text-4xl font-extrabold text-white md:text-5xl">
+            About <span class="text-[#f9b703]">Me.</span>
+          </h2>
+          <p class="text-[#888] leading-relaxed text-sm md:text-base mb-5">
+            I'm <b>Zeeshan Ahmad</b>, a self-taught Full Stack Developer with a genuine passion for
+            building things. I enjoy the entire process, from idea to a working
+            product that real people use. Writing clean, functional code across
+            the MERN and MEVN stacks is what I do best.
+          </p>
+          <p class="text-[#888] leading-relaxed text-sm md:text-base">
+            I'm always working on something new, pushing my skills further and
+            exploring better ways to solve problems.
+          </p>
         </div>
       </div>
     </section>
 
-    <!---------- Education Section ----------->
+    <!-- Education Section -->
     <section
-      class="w-full px-6 py-16 border-[1px] border-[#ffffff0b] mx-auto sm:px-10 lg:px-20 max-w-screen-2xl animate-fadeIn"
+      class="relative bg-[#080808] overflow-hidden border-t border-[rgba(249,183,3,0.08)]"
     >
-      <!-- Education Section -->
-      <div class="text-center">
-        <h1 class="text-4xl font-bold text-white">Education</h1>
-        <div class="grid gap-8 mt-12 md:grid-cols-2">
-          <!-- Education Items -->
-          <div
-            class="p-6 text-center transition-transform duration-300 transform bg-[#191919] rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl"
-          >
-            <div class="mb-4 text-5xl text-[#f9b703]">
-              <i class="fas fa-book"></i>
-            </div>
-            <h3 class="text-xl font-bold text-[#f9b703]">Matriculation</h3>
-            <p class="mt-2 font-bold text-gray-200">
-              F.G Public School Nowshera Cantt No.1(for boys)
-            </p>
-            <p class="font-medium text-gray-500">2021 - 2023</p>
-          </div>
-          <div
-            class="p-6 text-center transition-transform duration-300 transform bg-[#191919] rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl"
-          >
-            <div class="mb-4 text-5xl text-[#f9b703]">
-              <i class="fas fa-school"></i>
-            </div>
-            <h3 class="text-xl font-bold text-[#f9b703]">
-              Intermediate (Computer Science)
-            </h3>
-            <p class="mt-2 font-bold text-gray-200">
-              F.G Degree College Nowshera Cantt
-            </p>
-            <p class="font-medium text-gray-500">2023 - 2025</p>
-          </div>
-          <div
-            class="p-6 text-center transition-transform duration-300 transform bg-[#191919] rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl"
-          >
-            <div class="mb-4 text-5xl text-[#f9b703]">
-              <i class="fas fa-school"></i>
-            </div>
-            <h3 class="text-xl font-bold text-[#f9b703]">
-              BS Software Engineering (In Progress)
-            </h3>
-            <p class="mt-2 font-bold text-gray-200">
-              Virtual University of Pakistan
-            </p>
-            <p class="font-medium text-gray-500">2025 - present</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div
+        class="absolute bottom-[-50px] left-[-100px] w-[400px] h-[400px] rounded-full bg-[rgba(249,183,3,0.04)] blur-[100px] pointer-events-none"
+      ></div>
 
-    <!-- Skills Section -->
-    <section
-      class="w-full text-white px-6 py-16 border-t border-[#ffffff0b] max-w-screen-2xl mx-auto text-center"
-    >
-      <h2 class="mb-10 text-4xl font-bold">Skills</h2>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div
-          class="p-6 bg-[#191919] rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
-        >
-          <div class="text-5xl text-[#f9b703] mb-4">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="text-xl font-bold text-[#f9b703]">Frontend & UI/UX</h3>
-          <p class="mt-2 text-gray-200">
-            Vue.js, React, Tailwind CSS, animations, and responsive layouts
-          </p>
+      <div class="relative z-10 max-w-[1200px] mx-auto px-6 md:px-12 py-20">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-4xl font-extrabold text-white md:text-5xl">
+            Education<span class="text-[#f9b703]">.</span>
+          </h2>
         </div>
 
-        <div
-          class="p-6 bg-[#191919] rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
-        >
-          <div class="text-5xl text-[#f9b703] mb-4">
-            <i class="fas fa-database"></i>
+        <div class="grid gap-5 md:grid-cols-3">
+          <div
+            v-for="edu in education"
+            :key="edu.title"
+            class="group p-6 rounded-xl border border-[rgba(249,183,3,0.1)] hover:border-[rgba(249,183,3,0.35)] bg-[rgba(255,255,255,0.02)] hover:bg-[rgba(249,183,3,0.03)] transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-[#f9b703] text-2xl mb-4">
+              <i :class="edu.icon"></i>
+            </div>
+            <h3 class="mb-1 text-base font-bold text-white">{{ edu.title }}</h3>
+            <p class="text-[#888] text-sm mb-1">{{ edu.school }}</p>
+            <p class="text-[#555] text-xs">{{ edu.period }}</p>
           </div>
-          <h3 class="text-xl font-bold text-[#f9b703]">Backend Development</h3>
-          <p class="mt-2 text-gray-200">
-            Node.js, Express.js, MongoDB, MySQL, RESTful APIs
-          </p>
-        </div>
-
-        <div
-          class="p-6 bg-[#191919] rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl"
-        >
-          <div class="text-5xl text-[#f9b703] mb-4">
-            <i class="fas fa-code-branch"></i>
-          </div>
-          <h3 class="text-xl font-bold text-[#f9b703]">
-            Version Control & Workflow
-          </h3>
-          <p class="mt-2 text-gray-200">
-            Git, GitHub
-          </p>
         </div>
       </div>
     </section>
@@ -218,6 +83,26 @@
 </template>
 
 <script setup>
-import assets from '../../assets/assets';
+import assets from "../../assets/assets";
 
+const education = [
+  {
+    icon: "fas fa-book",
+    title: "Matriculation",
+    school: "F.G Public School Nowshera Cantt",
+    period: "2021 - 2023",
+  },
+  {
+    icon: "fas fa-school",
+    title: "Intermediate (Computer Science)",
+    school: "F.G Degree College Nowshera Cantt",
+    period: "2023 - 2025",
+  },
+  {
+    icon: "fas fa-graduation-cap",
+    title: "BS Software Engineering",
+    school: "Virtual University of Pakistan",
+    period: "2025 - Present",
+  },
+];
 </script>
