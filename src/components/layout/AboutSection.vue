@@ -11,19 +11,14 @@
 
       <!-- Left: Image -->
       <div class="relative flex items-center justify-center">
-        <!-- Spinning ring -->
         <div class="relative w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px]">
           <div class="absolute -inset-1 rounded-full p-[3px] bg-[conic-gradient(from_0deg,#f9b703,transparent_40%,transparent_60%,#f9b703_100%)] animate-spin [animation-duration:5s]">
           </div>
           <div class="w-full relative h-full rounded-full bg-[#080808] p-1.5">
-            <img
-              :src="assets.Avatar"
-              alt="Zeeshan Ahmad"
-              class="object-cover w-full h-full rounded-full"
-            />
+            <img :src="assets.Avatar" alt="Zeeshan Ahmad" class="object-cover w-full h-full rounded-full" />
           </div>
         </div>
-        </div>
+      </div>
 
       <!-- Right: Text -->
       <div class="text-center lg:text-left">
@@ -33,7 +28,7 @@
         </h2>
 
         <p class="text-[#888] leading-relaxed text-sm md:text-base mb-6">
-          I'm a self-taught Full Stack Developer with a genuine passion for building things. I enjoy the entire process, from idea to a working product that real people use. Writing clean, functional code across the MERN and MEVN stacks is what I do best.
+          I'm <span class="font-semibold text-white">Zeeshan Ahmad</span>, a self-taught Full Stack Developer with a genuine passion for building things. I enjoy the entire process, from idea to a working product that real people use. Writing clean, functional code across the MERN and MEVN stacks is what I do best.
         </p>
 
         <p class="text-[#888] leading-relaxed text-sm md:text-base mb-10">

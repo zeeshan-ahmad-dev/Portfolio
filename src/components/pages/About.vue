@@ -11,21 +11,23 @@
       ></div>
 
       <div
-        class="relative z-10 max-w-[1200px] mx-auto px-6 md:px-12 py-20 flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-12 lg:gap-16"
+        class="relative z-10 max-w-[1200px] mx-auto px-6 md:px-12 py-20 flex justify-center flex-col lg:grid lg:grid-cols-2 lg:items-center gap-12 lg:gap-16"
       >
         <!-- Left: Image -->
-        <div
-          class="relative w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px]"
-        >
+        <div class="flex justify-center w-full mx-auto">
           <div
-            class="absolute -inset-1 rounded-full p-[3px] bg-[conic-gradient(from_0deg,#f9b703,transparent_40%,transparent_60%,#f9b703_100%)] animate-spin [animation-duration:5s]"
-          ></div>
-          <div class="w-full relative h-full rounded-full bg-[#080808] p-1.5">
-            <img
-              :src="assets.Avatar"
-              alt="Zeeshan Ahmad"
-              class="object-cover w-full h-full rounded-full"
-            />
+            class="relative w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px]"
+          >
+            <div
+              class="absolute -inset-1 rounded-full p-[3px] bg-[conic-gradient(from_0deg,#f9b703,transparent_40%,transparent_60%,#f9b703_100%)] animate-spin [animation-duration:5s]"
+            ></div>
+            <div class="w-full relative h-full rounded-full bg-[#080808] p-1.5">
+              <img
+                :src="assets.Avatar"
+                alt="Zeeshan Ahmad"
+                class="object-cover w-full h-full rounded-full"
+              />
+            </div>
           </div>
         </div>
 
@@ -35,10 +37,10 @@
             About <span class="text-[#f9b703]">Me.</span>
           </h2>
           <p class="text-[#888] leading-relaxed text-sm md:text-base mb-5">
-            I'm <b>Zeeshan Ahmad</b>, a self-taught Full Stack Developer with a genuine passion for
-            building things. I enjoy the entire process, from idea to a working
-            product that real people use. Writing clean, functional code across
-            the MERN and MEVN stacks is what I do best.
+            I'm <b>Zeeshan Ahmad</b>, a self-taught Full Stack Developer with a
+            genuine passion for building things. I enjoy the entire process,
+            from idea to a working product that real people use. Writing clean,
+            functional code across the MERN and MEVN stacks is what I do best.
           </p>
           <p class="text-[#888] leading-relaxed text-sm md:text-base">
             I'm always working on something new, pushing my skills further and
